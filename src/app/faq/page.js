@@ -8,7 +8,7 @@ export default function Faq({ Title, Para }) {
 
     { Title: 'Can I take physical possession of the gold I invest in?', Para: 'Shirakatdari.com primarily offers fractional ownership of gold for investment purposes. The physical gold is securely stored in trusted vaulting facilities. However, if you have specific requirements or larger investment holdings, please contact our customer support team to discuss possible options.' },
 
-    { Title: 'Is my investment in fractional gold ownership secure?', Para: 'At Shirakatdari.com, we prioritize the security and integrity of our investors’ assets. The gold is stored in trusted vaulting facilities with robust security measures in place. We also employ advanced encryption and authentication methods to protect your personal and financial information.' },
+    { Title: 'Is my investment in fractional gold ownership secure?', Para: 'At Shirakatdari.com, we prioritize the security and integrity of our investors assets. The gold is stored in trusted vaulting facilities with robust security measures in place. We also employ advanced encryption and authentication methods to protect your personal and financial information.' },
 
     { Title: 'What fees are associated with fractional gold ownership?', Para: 'Shirakatdari.com charges a nominal fee for facilitating fractional gold ownership. The fee structure is transparent and will be clearly communicated during the investment process. Additionally, please note that there may be other fees associated with certain transactions, such as buying or selling gold shares, which will also be outlined before you confirm your transactions.' },
 
@@ -24,7 +24,7 @@ export default function Faq({ Title, Para }) {
 
     {
       Title: 'Is fractional gold ownership a good investment?',
-      Para: 'Fractional gold ownership can be a valuable addition to an investment portfolio. Gold has a long history of maintaining its value and acting as a hedge against inflation and market volatility. However, as with any investment, it’s important to conduct your own research, assess your risk tolerance, and consult with a financial advisor to determine if fractional gold ownership aligns with your investment goals.'
+      Para: 'Fractional gold ownership can be a valuable addition to an investment portfolio. Gold has a long history of maintaining its value and acting as a hedge against inflation and market volatility. However, as with any investment, it is important to conduct your own research, assess your risk tolerance, and consult with a financial advisor to determine if fractional gold ownership aligns with your investment goals.'
     },
 
     {
@@ -37,7 +37,7 @@ export default function Faq({ Title, Para }) {
   return (
     <>
       <div className="flex flex-col justify-center items-center text-center px-0 pt-10 pb-5">
-        <h1 className="font-serif text-5xl">FAQ's</h1>
+       <h1 className="font-serif text-5xl">FAQ&apos;s</h1>
         <div className="w-40 h-1 my-5 bg-amber-300"></div>
       </div>
 
