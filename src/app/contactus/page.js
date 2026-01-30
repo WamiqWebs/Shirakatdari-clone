@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import toast from "react-hot-toast";
+import  supabase  from '../../lib/supabase'
+
 
 export default function Contactus() {
   const [formData, setFormData] = useState({
