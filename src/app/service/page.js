@@ -1,4 +1,4 @@
-export default function Service({title,description}){
+export default function Service(){
     let Array = [
        {title:'Gold Bars:', description:'At Shirakatdari.com, Investing in gold bars offers a tangible and secure way to own fractional units of this precious metal. We offer a variety of gold bar sizes, ranging from small bars to larger ones, allowing you to tailor your investment to your budget and goals.'},
 

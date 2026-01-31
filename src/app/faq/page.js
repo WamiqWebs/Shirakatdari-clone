@@ -1,4 +1,4 @@
-export default function Faq({ Title, Para }) {
+export default function Faq() {
   let Array = [
     { Title: 'What is fractional gold ownership?', Para: 'Fractional gold ownership allows you to invest in a fraction or share of a larger unit of gold. Instead of purchasing a whole gold bar or coin, you can buy a smaller portion, which gives you the benefits of owning gold without the need for a large capital outlay.' },
 
