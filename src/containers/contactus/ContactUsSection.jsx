@@ -1,3 +1,4 @@
+"use client";
 import ContactUsForm from "@/components/contactus/ContactUsForm";
 
 export default function ContactUsSection() {

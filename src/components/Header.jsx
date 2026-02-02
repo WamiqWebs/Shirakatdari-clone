@@ -1,14 +1,21 @@
 "use client"
 import Link from "next/link"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
-    if (isOpen === true) {
-        document.body.style.overflowY = 'hidden';
-    } else {
-        document.body.style.overflowY = 'auto';
-    }
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflowY = "hidden";
+        } else {
+            document.body.style.overflowY = "auto";
+        }
+
+        // cleanup (important)
+        return () => {
+            document.body.style.overflowY = "auto";
+        };
+    }, [isOpen]);
 
 
     return (
@@ -83,19 +90,19 @@ export default function Header() {
                             opacity-0 invisible group-hover:visible group-hover:opacity-100 
                             transition-opacity duration-300 z-10">
                             <ul>
-                                <li  onClick={()=>setIsOpen(!isOpen)} className="px-4 py-2 hover:text-[#00FF0D] cursor-pointer">
+                                <li onClick={() => setIsOpen(!isOpen)} className="px-4 py-2 hover:text-[#00FF0D] cursor-pointer">
                                     <Link href="/aboutus">About Us</Link>
                                 </li>
                             </ul>
                         </div>
                     </li>
 
-                    <li  onClick={()=>setIsOpen(!isOpen)}><Link href="/howitworks" className="hover:text-[#00FF0D]">How it Works</Link></li>
-                    <li  onClick={()=>setIsOpen(!isOpen)}><Link href="/service" className="hover:text-[#00FF0D]">Services</Link></li>
-                    <li  onClick={()=>setIsOpen(!isOpen)}><Link href="/faq" className="hover:text-[#00FF0D]">FAQ's</Link></li>
-                    <li  onClick={()=>setIsOpen(!isOpen)}><Link href="/howtopay" className="hover:text-[#00FF0D]">How to Pay</Link></li>
-                    <li  onClick={()=>setIsOpen(!isOpen)}><Link href="/contactus" className="hover:text-[#00FF0D]">Contact Us</Link></li>
-                    <li  onClick={()=>setIsOpen(!isOpen)}><Link href="/login" className="hover:text-[#00FF0D]">Login</Link></li>
+                    <li onClick={() => setIsOpen(!isOpen)}><Link href="/howitworks" className="hover:text-[#00FF0D]">How it Works</Link></li>
+                    <li onClick={() => setIsOpen(!isOpen)}><Link href="/service" className="hover:text-[#00FF0D]">Services</Link></li>
+                    <li onClick={() => setIsOpen(!isOpen)}><Link href="/faq" className="hover:text-[#00FF0D]">FAQ's</Link></li>
+                    <li onClick={() => setIsOpen(!isOpen)}><Link href="/howtopay" className="hover:text-[#00FF0D]">How to Pay</Link></li>
+                    <li onClick={() => setIsOpen(!isOpen)}><Link href="/contactus" className="hover:text-[#00FF0D]">Contact Us</Link></li>
+                    <li onClick={() => setIsOpen(!isOpen)}><Link href="/login" className="hover:text-[#00FF0D]">Login</Link></li>
                 </ul>
             )}
         </section>
