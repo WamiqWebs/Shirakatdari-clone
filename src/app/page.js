@@ -15,7 +15,7 @@ export default function Home() {
       <Coins />
       <Works />
       <Invest1 />
-      <Footer />
+      
     </>
   );
 }

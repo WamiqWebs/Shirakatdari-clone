@@ -39,7 +39,7 @@ export default function AboutUs() {
                 <h1 className="mb-5 font-medium font-serif text-3xl lg:text-4xl">Our Commitment</h1>
 
                 {data.map((item, index) => (
-                    <div className="mt-5" key={index}>
+                    <div className="mt-5 my-2" key={index}>
                         <li className="list-none">
                             <b>{item.title}</b>: {item.para}
                         </li>
