@@ -59,7 +59,7 @@ export default function ContactUsForm() {
                 onSubmit={handleSubmit}
             >
                 {/* First Name */}
-                <div className="w-full lg:w-[400px] m-1 text-black bg-white flex flex-col">
+                <div className="w-full lg:w-100 m-1 text-black bg-white flex flex-col">
                     <label className="font-semibold mb-3">
                         First Name <span className="text-red-500">*</span>
                     </label>
@@ -74,7 +74,7 @@ export default function ContactUsForm() {
                 </div>
 
                 {/* Last Name */}
-                <div className="w-full lg:w-[400px] m-1 text-black bg-white flex flex-col">
+                <div className="w-full lg:w-100 m-1 text-black bg-white flex flex-col">
                     <label className="font-semibold mb-3">
                         Last Name <span className="text-red-500">*</span>
                     </label>
@@ -89,7 +89,7 @@ export default function ContactUsForm() {
                 </div>
 
                 {/* Email */}
-                <div className="w-full lg:w-[400px] m-1 text-black bg-white flex flex-col">
+                <div className="w-full lg:w-100 m-1 text-black bg-white flex flex-col">
                     <label className="font-semibold mb-3">
                         Email <span className="text-red-500">*</span>
                     </label>
@@ -105,7 +105,7 @@ export default function ContactUsForm() {
                 </div>
 
                 {/* Phone Number */}
-                <div className="w-full lg:w-[400px] m-1 text-black bg-white flex flex-col">
+                <div className="w-full lg:w-100 m-1 text-black bg-white flex flex-col">
                     <label className="font-semibold mb-3">
                         Phone Number <span className="text-red-500">*</span>
                     </label>
@@ -120,7 +120,7 @@ export default function ContactUsForm() {
                 </div>
 
                 {/* Subject Radio Buttons */}
-                <div className="w-full lg:w-[400px] m-1 text-black bg-white flex flex-col">
+                <div className="w-full lg:w-100 m-1 text-black bg-white flex flex-col">
                     <label className="font-semibold mb-3">
                         Select Subject <span className="text-red-500">*</span>
                     </label>
@@ -153,7 +153,7 @@ export default function ContactUsForm() {
                 </div>
 
                 {/* Message */}
-                <div className="w-full lg:w-[400px] m-1 text-black bg-white flex flex-col">
+                <div className="w-full lg:w-100 m-1 text-black bg-white flex flex-col">
                     <label className="font-semibold mb-3">
                         Message <span className="text-red-500">*</span>
                     </label>
